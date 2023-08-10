@@ -1,0 +1,14 @@
+int arrangeCoins(int n){
+    long i = 0, sum = 0;
+    while (sum <= n) 
+        sum += ++i;
+    return i-1;
+}
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+int arrangeCoins(int n){
+    return ((-1 + sqrt(1 + 4*(n*2)))/2));  // this is showing integer overflow in expression of type 'int' for the input 1957747793 , otherwise it's also a good solution
+}
